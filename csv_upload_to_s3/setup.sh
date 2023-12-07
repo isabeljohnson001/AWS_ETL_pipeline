@@ -51,7 +51,7 @@ execute_python_script() {
     local csv_to_s3_script="csv_to_s3.py"
     local bucket_name="csv-to-s3-project-dogukan-ulu"
     local object_key="dirty_store_transactions/dirty_store_transactions.csv"
-    local data_url="https://github.com/isabeljohnson001/aws_etl_pipeline/upload/main/csv_upload_to_s3/dirty_store_transactions.csv"
+    local data_url="https://raw.githubusercontent.com/isabeljohnson001/aws_etl_pipeline/main/csv_upload_to_s3/dirty_store_transactions.csv"
     
     log_message "Executing the Python script"
     chmod +x "$csv_to_s3_script"
