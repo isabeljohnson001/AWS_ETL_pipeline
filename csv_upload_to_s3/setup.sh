@@ -41,14 +41,14 @@ unzip_files() {
 
 # Function to install required Python libraries
 install_python_libraries() {
-    local requirements_file="csv_to_s3/requirements.txt"
+    local requirements_file="requirements.txt"
     log_message "Installing Python libraries from $requirements_file"
     pip3 install -r "$requirements_file"
 }
 
 # Function to execute the Python script
 execute_python_script() {
-    local csv_to_s3_script="csv_to_s3/csv_to_s3.py"
+    local csv_to_s3_script="csv_to_s3.py"
     local bucket_name="csv-to-s3-project-isa"
     local object_key="dirty_store_transactions/dirty_store_transactions.csv"
     local data_url="https://raw.githubusercontent.com/isabeljohnson001/aws_etl_pipeline/main/csv_upload_to_s3/dirty_store_transactions.csv"
