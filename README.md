@@ -1,4 +1,4 @@
-# Automated Data Upload to Amazon S3 from EC2
+# Automated Data Upload to Amazon S3
 
 This repository contains scripts and instructions for automating the upload of CSV files to Amazon S3, utilizing Python and Shell scripting within an AWS EC2 instance environment. The process includes creating a new S3 bucket, fetching a CSV file from a URL, and managing the upload process through automated scripts.
 
